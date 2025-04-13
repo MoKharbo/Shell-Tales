@@ -21,7 +21,7 @@ public class Backgroundfish2 : MonoBehaviour
 
         transform.Translate(Vector3.right * Swimspeed * Time.deltaTime, Space.World);
 
-        if (transform.position.x <= positionX)
+        if (transform.position.x >= positionX)
         {
             Vector3 newPosition1 = transform.position;
             newPosition1.x = teleportX;
